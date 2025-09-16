@@ -9,3 +9,6 @@ req <- request("https://newsapi.org/v2/everything") |>
   )
 
 req_perform(req, path = paste0("data/", Sys.Date(), ".json"))
+
+usethis::use_github_action(url = 'https://github.com/posit-conf-2025/r-production/blob/main/3-scrape.yaml', save_as = 'scrape.yml')
+
